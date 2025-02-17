@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Courses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Other Courses</h1>
+        <ul>
+            <li>English Language and Literature</li>
+            <li>Mathematics</li>
+            <li>Physics, Chemistry, and Biology</li>
+            <li>ICT & Computer Science</li>
+            <li>GRE, SAT, and IELTS Preparation</li>
+        </ul>
+    </div>
+</body>
+</html>

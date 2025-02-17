@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        .job-listing {
+            margin: 20px 0;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Careers</h1>
+        <div class="job-listing">
+            <h3>Job Openings</h3>
+            <p><strong>Position:</strong> Tutor for Mathematics (Full-time)</p>
+            <p><strong>Location:</strong> Dubai</p>
+            <p><strong>Skills Required:</strong> Strong knowledge of Mathematics, teaching experience, and excellent communication skills.</p>
+        </div>
+        <div class="job-listing">
+            <p><strong>Position:</strong> English Language Instructor (Part-time)</p>
+            <p><strong>Location:</strong> Dubai</p>
+            <p><strong>Skills Required:</strong> Proficiency in English, teaching experience, and strong interpersonal skills.</p>
+        </div>
+    </div>
+</body>
+</html>
