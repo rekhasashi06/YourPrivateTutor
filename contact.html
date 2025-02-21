@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #007bff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h1 {
+            color: #007bff;
+        }
+        form {
+            text-align: left;
+            margin-top: 20px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar with All Links -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="cambridge_course.html">Cambridge Course</a>
+        <a href="ib_course.html">IB Course</a>
+        <a href="american_curriculum.html">American Curriculum</a>
+        <a href="sabis_curriculum.html">SABIS Curriculum</a>
+        <a href="test_prep.html">Test Preparation</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or need more information, please reach out to us!</p>
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="mobile">Your Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required>
+
+            <button type="submit">Send via WhatsApp</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Get user input values
+            var name = document.getElementById("name").value;
+            var mobile = document.getElementById("mobile").value;
+
+            // Replace with your WhatsApp number
+            var whatsappNumber = "971558257712"; 
+
+            // Create WhatsApp message
+            var message = `Hello, I am ${name}. My mobile number is ${mobile}. I would like to inquire about tutoring services.`;
+
+            // Generate WhatsApp URL
+            var whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+            // Open WhatsApp chat
+            window.open(whatsappURL, "_blank");
+        });
+    </script>
+
+</body>
+</html>
